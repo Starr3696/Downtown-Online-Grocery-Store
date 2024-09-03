@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html media="screen">
+<head>
+    <title>Downtown Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</head>
+<body>
+    <header></header>
+
+    <div class="nav-wrapper">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li><a href="log-in.html">Log In</a></li>
+                <li><a href="order-online.html">Order Online</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <section class="cart">
+                    <button id="cart-btn">Cart (0)</button>
+                </section>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="image-holder"></div>
+    <br><br>
+    <header>
+        <h1>Downtown Grocery Store</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="image/apples-crisp-red.jpg" alt="Apple">
+                <h2>Apple</h2>
+                <p>ksh350.00 per kg</p>
+                <button type="button" class="btn btn-success" onclick="addToCart('Apple', 350, 'image/apples-crisp-red.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+          <img src="image/apples-green-granny.jpg" alt="Banana">
+          <h2>Green apples</h2>
+          <p>ksh360.00 per kg</p>
+          <button type="button" class="btn btn-success"  onclick="addToCart('Banana', 360, 'image/apples-green-granny.jpg')">
+            Add to Cart
+          </button>
+      </div>
+
+      <div class="product">
+        <img src="image/bananas.jpg" alt="Carrot">
+        <h2>ripe bananas</h2>
+        <p>ksh300.00 per kg</p>
+        <button type="button" class="btn btn-success" onclick="addToCart('Carrot', 360, 'image/bananas.jpg')">
+          Add to Cart
+        </button>
+    </div>
+    <div class="product">
+        <img src="image/green-banana.jpg" alt="Banana">
+        <h2>green bananas</h2>
+        <p>ksh250.00 per kg</p>
+        <button type="button" class="btn btn-success" onclick="addToCart('banana', 360, 'image/bananas.jpg')">
+          Add to Cart
+        </button>
+    </div>
+    <div class="product">
+      <img src="image/carrots.jpg" alt="Carrot">
+      <h2>Carrot</h2>
+      <p>ksh150.00 per kg</p>
+      <button type="button" class="btn btn-success" onclick="addToCart('Carrot', 360, 'image/carrots.jpg')">
+        Add to Cart
+      </button>
+  </div>
+  <div class="product">
+    <img src="image/coconut-local.jpg" alt="coconut">
+    <h2>local coconut</h2>
+    <p>ksh600.00 per kg</p>
+    <button type="button" class="btn btn-success" onclick="addToCart('coconut', 360, 'image/coconut-local.jpg')">
+      Add to Cart
+    </button>
+</div>
+<div class="product">
+  <img src="image/fresh-cucumbers.jpg" alt="Cucumbers">
+  <h2>Fresh fresh-cucumbers</h2>
+  <p>ksh250.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('coconut', 360, 'image/fresh-cucumbers.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/apples-crisp-red.jpg" alt="apple">
+  <h2>apples crisp red</h2>
+  <p>ksh600.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('coconut', 360, 'image/apples-crisp-red.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/green-grapes.jpg" alt="grapes">
+  <h2>green green-grapes</h2>
+  <p>ksh800.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('coconut', 360, 'image/green-grapes.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/apples-green-granny.jpg" alt="apple">
+  <h2>green granny apples</h2>
+  <p>ksh950.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('apple', 360, 'image/apples-green-granny.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/apples-crisp-red.jpg" alt="apple">
+  <h2>crisp red apples</h2>
+  <p>ksh900.00 per kg</p>
+  <button type="button" class="btn btn-success"  onclick="addToCart('apple', 360, 'image/apples-crisp-red.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/beef.jpg" alt="beef">
+  <h2>beef</h2>
+  <p>ksh1050.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('apple', 360, 'image/beef.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/black-seedless-grapes.jpg" alt="grape">
+  <h2>seddlse black-seedless-grapes</h2>
+  <p>ksh1080.00 each</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('grape', 360, 'image/black-seedless-grapes.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/Brown-eggs.jpg" alt="Brown-eggs">
+  <h2>brown Brown-eggs</h2>
+  <p>ksh520.00 per crate</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('eggs', 360, 'image/Brown-eggs.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/gooseberries.jpg" alt="barries">
+  <h2>gooseberries</h2>
+  <p>ksh950.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('barries', 360, 'image/gooseberries.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/green-spring-onions.jpg" alt="onions">
+  <h2>green green-spring-onions</h2>
+  <p>ksh150.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('onions', 360, 'image/green-spring-onions.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/hass-avocado.jpg" alt="avocado">
+  <h2>hass-avocado</h2>
+  <p>ksh910.00 per kg</p>
+  <button type="button" class="btn btn-success"  onclick="addToCart('avocado', 360, 'image/hass-avocado.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/indigo-tangerine.jpg" alt="tangerine">
+  <h2>indigo-tangerines</h2>
+  <p>ksh450.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('tangerine', 360, 'image/indigo-tangerine.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/lemons.jpg" alt="lemons">
+  <h2>lemons</h2>
+  <p>ksh250.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('lemons', 360, 'image/lemons.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/parsley-leaves.jpg" alt="parsley">
+  <h2>parsley-leaves</h2>
+  <p>ksh120.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('parsley', 360, 'image/parsley-leaves.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/passion-fruit.jpg" alt="Fruit">
+  <h2>passion-fruit</h2>
+  <p>ksh1037.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('Fruit', 360, 'image/passion-fruit.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/pawpaw.jpg" alt="Fruit">
+  <h2>pawpaw</h2>
+  <p>ksh550.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('Fruit', 360, 'image/pawpaw.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/sugacane.jpg" alt="fruit">
+  <h2>sugacane</h2>
+  <p>ksh350.00 per kg</p>
+  <button type="button" class="btn btn-success"  onclick="addToCart('Fruit', 360, 'image/sugacane.jpg')">
+    Add to Cart
+  </button>
+</div>
+<div class="product">
+  <img src="image/water-melon.jpg" alt="fruit">
+  <h2>water-melon</h2>
+  <p>ksh1050.00 per kg</p>
+  <button type="button" class="btn btn-success" onclick="addToCart('Fruit', 360, 'image/water-melon.jpg')">
+    Add to Cart
+  </button>
+</div>
+
+     </div>
+            <!-- Repeat the above block for other products -->
+        </section>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">My Cart</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" id="cart-items">
+                        <!-- Cart items will be inserted here by JavaScript -->
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-dark-grey w3-xlarge">
+            <a href="https://www.facebook.com/profile.php?id=100093337967924" class="fa fa-facebook w3-hover-opacity"></a>
+            <a href="https://www.instagram.com/starr_9ntyeit?igsh=ZGUzMzM3NWJiOQ==" class="fa fa-instagram w3-hover-opacity"></a>
+            <a href="#" class="fa fa-twitter w3-hover-opacity"></a>
+            <a href="https://www.linkedin.com/in/starford-magero-aa9837272?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPwnBBqfZTOCnZajtVZAiuQ%3D%3D" class="fa fa-linkedin w3-hover-opacity"></a>
+            <p class="w3-medium">&copy; 2024 Powered by <a href="https://www.instagram.com/theasachi_marketingagency?igsh=ZGUzMzM3NWJiOQ==" target="_blank" class="w3-hover-text-green">Asachi Marketing Agency</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

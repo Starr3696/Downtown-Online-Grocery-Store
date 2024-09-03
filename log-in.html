@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html media="screen">
+<head>
+<title>Log in Form</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    body, html {
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* The image used */
+      background-image: url("image/background.jpg");
+    
+      height: 850px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    /* Add styles to the form container */
+    .container {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+      max-width: 300px;
+      padding: 16px;
+      background-color: #13bb0d;
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #13bb0d;
+      outline: none;
+    }
+    
+    #submit-btn {
+background-color: #4CAF50; 
+border: none;
+color: white; 
+padding: 7px 12px; 
+margin: 9px 18px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+cursor: pointer; 
+border-radius: 5px; 
+transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+background-color: #45a049; 
+}
+
+    .btn:hover {
+      opacity: 1;
+    }
+    </style>
+</head>
+  
+<body>
+  <div class="nav-wrapper">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li><a href="log-in.html">Log In</a></li>
+        <li><a href="order-online.html">Order Online</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="bg-img">
+    <form action="/action_page.php" class="container">
+     
+      <form action="action_page.php">
+      <label class="form-item" for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label class="form-item" for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <br><br>
+      <textarea id="subject" name="subject" placeholder="How can we help?"></textarea><br><br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  
+   <!-- Footer -->
+   <footer class="w3-content w3-padding-64 w3-text-dark w3-xlarge">
+    <a href="https://www.facebook.com/profile.php?id=100093337967924" class="fa fa-facebook w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/starr_9ntyeit?igsh=ZGUzMzM3NWJiOQ==" class="fa fa-instagram" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="#" class="fa fa-twitter" class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/starford-magero-aa9837272?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPwnBBqfZTOCnZajtVZAiuQ%3D%3D" class="fa fa-linkedin" class="fa fa-linkedin w3-hover-opacity"></a>
+    <p class="w3-medium">&copy; 2024 Powered by <a href="https://www.instagram.com/theasachi_marketingagency?igsh=ZGUzMzM3NWJiOQ==" target="_blank" class="w3-hover-text-orange">Asachi Marketing Agency</a></p>
+  <!-- End footer -->
+  </footer>
+
+</body>
+</html>
